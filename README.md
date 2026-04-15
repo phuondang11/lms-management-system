@@ -1,73 +1,124 @@
-# LMS
+# 🎓 Learning Management System (LMS)
 
-This template should help get you started developing with Vue 3 in Vite.
+## 📌 Overview
 
-## Recommended IDE Setup
+This project is a **full-featured Learning Management System (LMS)** built to simulate a real-world education platform.
+It provides role-based access control, authentication, and complete CRUD functionality for managing users, students, and courses.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+The system is designed with scalability and maintainability in mind, following modern frontend architecture practices.
 
-## Recommended Browser Setup
+---
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 🛠 Tech Stack
 
-## Type Support for `.vue` Imports in TS
+* Vue 3 (Composition API)
+* Vite
+* Pinia (State Management)
+* Vue Router
+* Axios (API handling)
+* RESTful API (mock / backend integration)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+---
 
-## Customize configuration
+## 🔐 Core Features
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### 🔑 Authentication & Authorization
 
-## Project Setup
+* Login / Logout functionality
+* Token-based authentication
+* Role-based access control (Admin / User)
 
-```sh
-npm install
+### 👥 User & Role Management
+
+* Manage users with different roles
+* Permission-based UI rendering
+* Protected routes
+
+### 📚 Course Management
+
+* Create / Read / Update / Delete courses
+* Assign students to courses
+* Dynamic data handling
+
+### 👨‍🎓 Student Management
+
+* Add / edit / delete students
+* Search and filter functionality
+
+### 📊 Dashboard
+
+* Overview statistics
+* Data visualization (optional if you have)
+
+---
+
+## ⚙️ System Architecture
+
+* Modular folder structure
+* Separation of concerns (views, services, store)
+* Reusable components
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+ ├── assets/
+ ├── components/
+ ├── views/
+ │    ├── Login.vue
+ │    ├── Dashboard.vue
+ │    ├── Students.vue
+ │    ├── Courses.vue
+ │
+ ├── router/
+ │    └── index.js
+ │
+ ├── store/
+ │    ├── auth.js
+ │    ├── user.js
+ │
+ ├── services/
+ │    └── api.js
 ```
 
-### Compile and Hot-Reload for Development
+---
 
-```sh
+## ⚡ Setup & Run
+
+```bash
+npm install
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+## 🎯 Key Highlights
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+* Built with scalable architecture similar to real-world applications
+* Implements authentication and role-based authorization
+* Uses centralized state management (Pinia)
+* Clean and maintainable code structure
 
-```sh
-npm run test:unit
-```
+---
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
+## 📸 Screenshots
 
-```sh
-# Install browsers for the first run
-npx playwright install
+> (Add dashboard, login, CRUD pages here)
 
-# When testing on CI, must build the project first
-npm run build
+---
 
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
+## 💡 Future Improvements
 
-### Lint with [ESLint](https://eslint.org/)
+* Pagination & advanced filtering
+* Unit testing
+* Backend integration (Node.js / MongoDB)
+* Deployment optimization
 
-```sh
-npm run lint
-```
+---
+
+## 👨‍💻 Author
+
+Phuong Dang
+Frontend Developer
