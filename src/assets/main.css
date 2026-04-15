@@ -1,0 +1,59 @@
+/* @keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-modal {
+  animation: modalIn 0.25s ease;
+} */
+
+/* BACKDROP */
+.modal-enter-from {
+  opacity: 0;
+}
+.modal-enter-active {
+  transition: opacity 0.2s ease;
+}
+.modal-leave-active {
+  transition: opacity 0.2s ease;
+}
+.modal-leave-to {
+  opacity: 0;
+}
+
+/* MODAL BOX */
+.modal-enter-from .modal-box {
+  opacity: 0;
+  transform: translateY(30px) scale(0.9);
+}
+.modal-enter-active .modal-box {
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.modal-leave-to .modal-box {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+}
+.modal-leave-active .modal-box {
+  transition: all 0.2s ease;
+}
+
+.slide-enter-from {
+  opacity: 0;
+  transform: translateY(-5px);
+}
+.slide-enter-active {
+  transition: all 0.2s ease;
+}
+.slide-leave-to {
+  opacity: 0;
+  transform: translateY(-5px);
+}
+.slide-leave-active {
+  transition: all 0.15s ease;
+}
