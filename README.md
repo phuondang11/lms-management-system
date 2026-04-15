@@ -103,12 +103,6 @@ npm run dev
 
 ---
 
-## 📸 Screenshots
-
-> (Add dashboard, login, CRUD pages here)
-
----
-
 ## 💡 Future Improvements
 
 * Pagination & advanced filtering
